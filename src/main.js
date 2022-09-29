@@ -72,8 +72,8 @@ Apify.main(async () => {
             log.info(`Page loaded with title: ${await page.title()} on URL: ${url}`);
             // wait 5 seconds (if there is some dynamic content)
             // TODO: this should wait for the selector to be available
-            log.info('Sleeping 5s ...');
-            await sleep(5000);
+            log.info('Sleeping 15s ...');
+            await sleep(15000);
 
             try {
                 await Apify.utils.puppeteer.injectJQuery(page);
